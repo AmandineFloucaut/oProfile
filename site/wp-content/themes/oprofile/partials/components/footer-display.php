@@ -35,19 +35,19 @@
                     <div class="contact__title">
                         <i class="fas fa-home"></i>
                         <p> Adresse </p>
-                    </div> 
-                    
+                    </div>
+
                     <div class="contact__content">
                         <i ></i>
-                        <p> 
-                        5 rue du calvaire 
+                        <p>
+                        5 rue du calvaire
                         56220 CADEN
                         </p>
                     </div>
                 </div>
 
             </div> <!-- End footer contact -->
-        
+
 
         <div class="footer__links">
 

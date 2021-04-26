@@ -9,6 +9,7 @@
 
 
     // .excerpt__title
+    // BUG
     &__title {
         font-size: 1.3rem;
         font-family: 'Roboto Slab';
@@ -28,7 +29,7 @@
 
     & a {
         text-decoration: none;
-        
+
     }
 
     &::after {

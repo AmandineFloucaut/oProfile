@@ -3,13 +3,10 @@
 
             <h2 class="section-title"> Ils nous font confiance </h2>
 
-            <!-- <div class="company__post" >
-                <div class="post__image">
-                    <img src="<?= get_theme_file_uri('assets/images/github.png') ?>" alt="">
-                </div> -->
-
                 <?php
                     $companyArticles = get_articles_from_company();
+                    // BUG
+                    echo $companyArticles;
                     $imageGit = get_theme_file_uri('assets/images/github.png');
                     foreach($companyArticles as $article){
 
