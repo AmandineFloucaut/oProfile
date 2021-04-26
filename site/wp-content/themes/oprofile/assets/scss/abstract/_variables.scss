@@ -1,0 +1,26 @@
+// Colors
+$color-blue: #00d4ff;
+$color-light-blue: #ebf0fb;
+$color-dark-blue: #6489df;
+$color-grey-blue: #242943;
+$color-violet: #8d82c4;
+$color-red: #e56555;
+$color-yellow: #de9d5e;
+$color-green: #65b48a;
+$color-white: white;
+$color-grey: #CCC;
+$color-dark-grey: #222;
+$color-black: #000;
+
+
+// liste des couleurs des articles
+$article-colors-list : (
+    // la première couleur est plus claire de 10% par rapport au bleu de base https://sass-lang.com/documentation/modules/color
+    1: lighten($color-dark-blue, 10%),
+    2: $color-violet,
+    3: $color-red,
+    4: $color-yellow,
+    5: $color-green,
+    6: $color-grey-blue,
+    7: $color-black,
+);

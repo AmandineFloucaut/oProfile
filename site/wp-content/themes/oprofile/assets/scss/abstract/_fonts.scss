@@ -1,0 +1,11 @@
+// déclaration d'une police "custom"
+@font-face {
+    font-family: "Roboto Slab"; // nom que l'on donne à notre font
+    src: url("../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf"); // chemin vers le fichier de font
+}
+
+@font-face {
+    font-family: "PT Sans"; // nom que l'on donne à notre font
+    src: url("../fonts/PT_Sans/PTSans-Regular.ttf"); // chemin vers le fichier de font
+}
+

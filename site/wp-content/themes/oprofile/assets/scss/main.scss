@@ -1,0 +1,26 @@
+// chargement des fichiers de "configuration" css
+@import './abstract/fonts';
+@import './abstract/variables';
+@import './abstract/spacing';
+@import './abstract/mixins';
+
+
+// chargement des fichiers gérant la mise en page globale
+@import './layout/global';
+@import './layout/header';
+@import './layout/articles';
+@import './layout/company';
+@import './layout/footer';
+
+//@ chargement des composents
+@import './components/article';
+@import './components/button';
+@import './components/nav';
+@import './components/carousel';
+
+
+body {
+
+    // font-family: "Roboto Slab";
+    font-family: "PT Sans";
+}

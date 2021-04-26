@@ -1,0 +1,7 @@
+// gestion des espacements
+$gutter-simple: 1rem;
+// #{$nom-de-la-variable} ; permet d'utiliser une variable dans des "traitements" (calculs, boucle etc...)
+$gutter-half: calc(#{$gutter-simple} / 2);
+$gutter-double: calc(#{$gutter-simple} * 2);
+$gutter-triple: calc(#{$gutter-simple} * 3);
+

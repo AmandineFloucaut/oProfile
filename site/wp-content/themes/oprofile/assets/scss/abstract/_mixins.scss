@@ -1,0 +1,74 @@
+// déclaration d'un "mixin" ("extrait" de code css)
+// @mixin debug {
+//     border: solid 2px #f0f;
+//     margin: 1rem;
+// }
+
+// @mixin debug2 {
+//     border: solid 2px #ff0;
+//     margin: 1rem;
+//     @content;
+// }
+
+// @mixin debug3($color: red) {
+//     border: solid 2px $color;
+//     margin: 1rem;
+//     @content;
+// }
+
+
+// gestion des différentes résolutions
+
+
+@mixin screen-small {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin screen-medium {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin screen-large {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin screen-extra-large {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin screen-huge {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+
+
+@mixin addBottomBorder($border-color: red, $border-width: 3px) {
+    border-bottom: solid $border-width $border-color;
+}
+
+/*
+Equivalent :
+function addBottomBorder($borderColor = 'red',$borderWidth='3px')
+{
+    echo 'border-bottom: solid ' . $border-width. ' '. $border-color . ';';
+}
+*/
+
+@mixin banner($color: $color-grey){
+
+    .banner {
+        width: 100%;
+        height: 50px;
+        background-color: $color-grey;
+    }
+}

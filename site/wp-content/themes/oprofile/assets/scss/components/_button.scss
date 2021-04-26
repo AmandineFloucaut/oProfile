@@ -1,0 +1,29 @@
+.button {
+    color: $color-blue;
+    border: solid 2px $color-dark-blue;
+    padding: $gutter-half;
+    text-decoration: none;
+   
+    &::after {
+        // <i class="fas fa-arrow-right"></i>
+        content: '\f061';   // code (unicode) du caractère
+        font-family: "Font Awesome 5 Free"; // dans quelle police nous affichons le caractère
+        font-weight: 600;
+        margin-left: $gutter-double;
+    }
+}
+
+.hero__buttons {
+    @include screen-medium{
+      margin-top: 10rem;    
+
+      .button {
+          margin-right: 2rem;
+          font-size: 1.2rem;
+      }
+    }
+
+
+     
+}
+ 

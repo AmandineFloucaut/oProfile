@@ -1,0 +1,10 @@
+.excerpt-list {
+    @include screen-medium {
+        display: flex;
+        flex-wrap: wrap;
+
+        .excerpt {
+            width: 50%;
+        }
+    }
+}

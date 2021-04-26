@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    @include screen-small {
+        // background-color: #000;
+    }
+
+    @include screen-medium {
+        // background-color: #a00;
+    }
+
+    @include screen-large {
+        // background-color: #0a0;
+    }
+
+    @include screen-extra-large {
+        // background-color: #00a;
+    }
+
+    @include screen-huge {
+        // background-color: #ffa;
+    }
+}
+
+section {
+    background-color: $color-white;
+    // margin-bottom: $gutter-double;
+
+    h2.section-title {
+        border-bottom: 3px $color-blue solid;
+        color: $color-grey-blue;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        padding: $gutter-simple 0;
+        margin: $gutter-double $gutter-simple;
+        width: 60%;
+    }
+
+    h3.section-title {
+        color: $color-grey-blue;
+        font-size: 1.2rem;
+        padding-left: $gutter-simple;
+    }
+
+}
+
+
+main {
+    p {
+        line-height: 1.3;
+        margin-bottom: $gutter-simple;
+        padding: $gutter-simple;
+    }
+
+    a {
+        color: $color-blue;
+        text-decoration: none;
+        transition: all 0.2s;
+
+        &:hover {
+            color: $color-dark-blue;
+        }
+
+        &:visited {
+            color: $color-grey;
+        }
+    }
+}
+
+.profile {
+
+    background-color: $color-grey-blue;
+    padding-top: $gutter-double;
+    color: $color-white;
+    text-align: justify;
+
+    &>h2.section-title {
+      margin-top: 0;   
+      color: $color-white;
+    }
+
+    &__content>h3.section-title {  
+        color: $color-white;
+    }
+
+    & .customer-quotes>h3.section-title {
+        color: $color-white;
+    }
+
+    @include screen-medium {
+       &__content {
+        width: 70%;
+        margin: 0 auto 0 auto;
+        } 
+    }
+    
+    // background-image: url('../../images/epaule.jpg'); 
+    // background-repeat: no-repeat; 
+    // background-position: top; 
+    // background-size: cover;
+
+    // & .section-title,
+    // & .biography,
+    // & .carousel__item {
+    //     color: $color-white;  
+    // }
+}

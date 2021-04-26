@@ -1,0 +1,27 @@
+# ignorer les dossiers et fichiers nommés ".cache" dans TOUTE l'aboresence
+# si on avait mis /.cache, on aurait ignoré que les répértoires et les fichiers nommés ".cache" qui se trouveraient à la racine du projet
+.htaccess
+.cache
+dist
+node_modules
+vendor
+composer.lock
+wp
+wp-config.php
+
+/wp-content/*
+!/wp-content
+
+/wp-content/themes/*
+!/wp-content/themes
+!/wp-content/themes/oprofile
+#!/wp-content/themes/custom_theme
+
+/wp-content/plugins/*
+!/wp-content/plugins/
+#!/wp-content/plugins/custom_plugin
+
+package-lock.json
+.cache
+node_modules
+dist

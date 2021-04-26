@@ -1,0 +1,4 @@
+# nous ignorons les dossiers gérés par parcel
+dist
+.cache
+node_modules

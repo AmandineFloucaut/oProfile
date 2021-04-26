@@ -1,0 +1,117 @@
+.footer {
+    background-color: $color-grey-blue;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    color: $color-white;
+    font-size: 1.1rem;
+
+    &__block {
+        width: 100%;
+    
+        & .block__icons {
+            width: 30%;
+            text-align: right;
+        }
+
+        & i {
+            width: 10%;
+            color: $color-violet;
+            text-align: right;
+        }
+
+        & .contact__block {
+            width: 100%;
+            padding: 0rem 1rem 1.5rem 1rem;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include addBottomBorder($color-violet, 1px);
+
+            & .contact__title,
+            & .contact__content {
+                width: 90%;
+                display: flex;
+            }
+
+            & .contact__title {
+                font-weight: bold;
+                padding: 1rem;
+            }
+
+            & .contact__content
+             {
+                
+                padding: 0.5rem 1rem 1.5rem 1rem;
+            }
+        }
+
+        & p {
+            margin-left: $gutter-simple;
+        }
+
+        @include screen-extra-large {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    &__links {
+
+        &--block {
+            display: flex;
+            justify-content: center;
+
+            @include screen-extra-large{
+                display: block;
+            }
+
+            & a {
+                color: $color-white;
+                display: block;
+                margin: 0.5rem;
+            }
+        }
+      
+        @include screen-extra-large {
+            width: 50%;
+            border-right: 1px solid $color-violet;
+            order: -1;
+            text-align: left;
+        }
+    }
+
+   .networks {
+       margin-top: 2rem;
+
+       & i {
+           margin: 1rem;
+       }
+   }
+
+   @include screen-extra-large {
+
+    padding: 2rem 20rem 2rem 20rem; 
+
+        & .contact__block,
+        & .contact__title,
+        & .contact__content {
+            padding-left: 0;
+        }
+
+        .footer__contact {
+            width: 50%;
+        }
+
+        & a {
+            margin-bottom: 3rem;
+        }
+    
+}
+
+
+
+}
