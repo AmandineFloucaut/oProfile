@@ -11,31 +11,30 @@ const carousel = {
      */
     init: function() {
         // console.log('init caroussel');
-        
-        //cibler les boutons
-        let buttons = document.querySelectorAll('.carousel__nav__button');    
+
+        let buttons = document.querySelectorAll('.carousel__nav__button');
         // console.log(buttons);
 
 
-       // écouter les evenments click de chacun 
+       // écouter les evenments click de chacun
        for(let button of buttons){
            button.addEventListener('click',carousel.handleClick);
            button.addEventListener('click',carousel.handleActiveClassButton);
        }
-    
+
        carousel.startAutoSlide();
     },
 
 
     /**
      * Méthode qui détecte l'évènement (le bouton cliqué dans le carrousel)
-     * @param {*} event 
+     * @param {*} event
      */
     handleClick: function(event){
-        
+
         // console.log('fonction handleClick');
 
-        // Utilisation de la propriété isTrusted qui détecte si un évènements est déclenché par une action de l'utilisateur ou par un script
+        // isTrusted détecte si un évènements est déclenché par une action de l'utilisateur ou par un script
         if(event.isTrusted){
             // Cette fonction annule l'action minutée de setInterval
             clearInterval(carousel.currentSlideCounter);
@@ -43,14 +42,14 @@ const carousel = {
             // console.log('if event trusted');
 
             // On redémarre le carrousel au bout de 10 secondes //! bug après le 1er redémarrage, accèlération du carrousel
-            setTimeout(carousel.startAutoSlide, 9000); 
+            setTimeout(carousel.startAutoSlide, 9000);
         }
 
 
         let clickedButton = event.currentTarget;
 
         let slideNumber = clickedButton.dataset.slideNumber;
-        
+
         carousel.displaySlide(slideNumber);
 
     },
@@ -73,7 +72,7 @@ const carousel = {
 
     /**
      * Méthode permettant de passer d'un article à l'autre dans le carrousel
-     * @param {*} slideNumber 
+     * @param {*} slideNumber
      */
     displaySlide: function(slideNumber){
         // console.log(slideNumber);
@@ -92,8 +91,8 @@ const carousel = {
     startAutoSlide: function(){
         // console.log('fonction starAutoSlide');
 
-        // Enregistrement du timer qui déclenchera la fonction goToNextSlide() toutes les 3 secondes. Cette variable sera utile pour arrếter le timer
-        carousel.setTimerId = setInterval(carousel.goToNextSlide, 3000); 
+        // Enregistrement du timer qui déclenchera la fonction goToNextSlide() toutes les 3 secondes -> utile pour arrếter le timer
+        carousel.setTimerId = setInterval(carousel.goToNextSlide, 3000);
     },
 
     goToNextSlide: function(){
@@ -103,7 +102,7 @@ const carousel = {
         carousel.currentSlideCounter++;
         // console.log(carousel.currentSlideCounter);
 
-        // Si le compteur est supérieur à 2 (-> correspond au dernier paragrapĥe du carrousel ayant un data-number = "2), on le repasse à 0
+        // Si le compteur est supérieur à 2 (-> correspond au dernier paragraphe du carrousel ayant un data-number = "2), on le repasse à 0
         if(carousel.currentSlideCounter > 2){
             carousel.currentSlideCounter = 0;
         }

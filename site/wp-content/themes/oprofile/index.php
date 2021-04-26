@@ -32,10 +32,6 @@
             get_template_part('partials/components/footer-display');
         ?>
 
-
-
-    <!-- <script src="<get_theme_file_uri('assets/javascript/main.js');?>"></script> -->
-
 <?php
     get_footer();
 ?>

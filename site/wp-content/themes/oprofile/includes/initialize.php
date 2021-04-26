@@ -7,7 +7,7 @@
  */
 function oprofile_initialize()
 {
-    
+
     // Activation de l'image de mise en avant des posts
     add_theme_support('post-thumbnails');
 

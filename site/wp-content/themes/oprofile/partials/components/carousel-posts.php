@@ -15,7 +15,7 @@
                             maxime!
                         </p>
                     </div>
-                    
+
                     <div class="customer-quotes__nav carousel__nav">
                         <div class="customer-quotes__nav__bar active carousel__nav__button" data-slide-number="0"></div>
                         <div class="customer-quotes__nav__bar carousel__nav__button" data-slide-number="1"></div>

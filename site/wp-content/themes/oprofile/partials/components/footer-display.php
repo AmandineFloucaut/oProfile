@@ -19,7 +19,7 @@
                 <div class="contact__block">
 
                     <div class="contact__title">
-                        <i class="fas fa-phone"></i> 
+                        <i class="fas fa-phone"></i>
                         <p> Téléphone </p>
                     </div>
 
