@@ -5,8 +5,7 @@
 
                 <?php
                     $companyArticles = get_articles_from_company();
-                    // BUG
-                    echo $companyArticles;
+
                     $imageGit = get_theme_file_uri('assets/images/github.png');
                     foreach($companyArticles as $article){
 

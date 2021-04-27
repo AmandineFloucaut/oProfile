@@ -7,7 +7,7 @@
  * @param integer $number = -1 permet d'afficher tous les articles
  * @return void
  */
-function get_articles_from_category($category = 1, $number = 6) {
+function get_articles_from_category($category = 1, $number = -1) {
 
     $queryFilters = [
         'cat' => $category,
@@ -24,7 +24,6 @@ function get_articles_from_category($category = 1, $number = 6) {
 }
 
 function get_articles_from_company(){
-    echo 'ici';
 
     return get_articles_from_category(4, -1);
 }
@@ -40,4 +39,7 @@ function get_articles_from_highlighted_profil(){
 }
 
 // TODO custom boucle pour articles affichés sur la home
-// function get_articles_from_
+function get_articles_from_home(){
+
+    return get_articles_from_category(3, 10);
+}
