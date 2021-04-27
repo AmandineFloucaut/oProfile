@@ -11,8 +11,8 @@
                                 echo '<article class="excerpt" style="background-image: url(\'https://source.unsplash.com/1kEHpwZdmtc\')">';
                                 // echo '<a href="'. get_the_permalink() .'">';
                                     echo '<h3 class="excerpt__title">';
-                                        //echo '<a href="'. get_the_permalink() . '">';
-                                            echo  the_title();
+                                        echo '<a href="'. get_the_permalink() . '">' . the_title() . '</a>';
+                                            //echo  the_title();
                                         //echo '</a>';
                                     echo '</h3>';
                                 // echo '';
