@@ -1,4 +1,8 @@
-<header class="header">
+<?php
+    get_header();
+?>
+
+    <header class="header">
         <?php
             get_template_part('partials/components/nav');
             get_template_part('partials/components/topbar');
@@ -11,3 +15,7 @@
     <?php
         get_template_part('partials/footer-display');
     ?>
+
+<?php
+    get_footer();
+?>
