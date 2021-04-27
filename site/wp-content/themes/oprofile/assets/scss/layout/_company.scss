@@ -3,22 +3,10 @@
     margin: 2rem 1rem;
     padding: 1rem;
 
-    @include screen-extra-large {
-        
-        padding: 1rem 2rem;
-        margin: 2rem 10rem;   
-
-        &:nth-child(2n){
-            & .post__image {
-                order:1;
-            } 
-        }
-    }
-    
     &:nth-child(2n){
        background-color: $color-light-blue;
     }
-   
+
     & .post__image {
         width: 100%;
         text-align: center;
@@ -26,18 +14,49 @@
 
     & .post__content {
 
+        margin: 0 0.5rem 0 1rem;
+
         & h4 {
             margin: 1rem 0 1rem 0;
             font-weight: bold;
         }
 
         & p {
-        padding: 0;
-        text-align: justify;
-        } 
+            padding: 0;
+            text-align: justify;
+        }
     }
-    
-    @include screen-extra-large {
+
+    @include screen-medium {
+
+        padding: 0rem;
+
+        & .post__image {
+            margin: 0 $gutter-simple 0 $gutter-simple;
+        }
+
+        &:nth-child(2n){
+            & .post__image {
+                order:1;
+                margin: 0 $gutter-simple 0 $gutter-simple;
+            }
+        }
+
         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 5rem;
+    }
+
+    @include screen-extra-large {
+
+        padding: 1rem 2rem;
+        margin: 2rem 10rem;
+
+        &:nth-child(2n){
+            & .post__image {
+                order:1;
+            }
+        }
     }
 }

@@ -7,22 +7,24 @@
 
                 $users = get_users();
                 foreach($articles as $article){
-                    echo '<h2 class="section-title">'. $article->post_title . '</h2>'; //':' . $users->display_name . '</h2>';
-                    echo '<div class="profile__content">';
-                    echo '<h3 class="section-title">'. $article->post_content .'</h3>';
+
+                    echo '<h2 class="section-title">'. $article->post_title .' : ' . $users[0]->display_name . '</h2>';
+                        echo '<div class="profile__content">';
+                            echo $article->post_content;
+                        echo '</div>';
                 }
             ?>
 
+                    <div class="customer-quotes">
 
-                <div class="customer-quotes">
-                    <h3 class="section-title customer-quotes__title">Quelques retours des clients</h3>
+                        <h3 class="section-title customer-quotes__title">
+                            Quelques retours des clients
+                        </h3>
 
-                    <?php
+                        <?php
+                            get_template_part('partials/components/carousel-posts');
+                        ?>
 
-                        get_template_part('partials/components/carousel-posts');
+                    </div>
 
-                    ?>
-
-                </div>
-            </div>
         </section>

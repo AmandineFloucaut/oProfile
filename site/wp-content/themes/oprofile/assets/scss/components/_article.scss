@@ -6,15 +6,12 @@
     padding: $gutter-double;
     box-sizing: border-box;
 
-
-
-    // .excerpt__title
     // BUG
     &__title {
         font-size: 1.3rem;
         font-family: 'Roboto Slab';
         color: $color-white;
-        //border-bottom: 2px solid  $color-white;
+
         @include addBottomBorder($color-white, 5px);
         margin-bottom: $gutter-double;
         padding-bottom: $gutter-half;
@@ -24,12 +21,10 @@
         &>a{
             color: $color-white;
         }
-
     }
 
     & a {
         text-decoration: none;
-
     }
 
     &::after {
@@ -44,11 +39,12 @@
         opacity: 0.8;
     }
 
-    //equivalent ) foreach($articleColorsList  as $index => $color) {....}
-
     @each $index, $color in $article-colors-list {
+
+        // DOC https://sass-lang.com/documentation/at-rules/function#keyword-arguments
         &:nth-child(#{length($article-colors-list)}n+#{$index})::after {
             background-color: $color;
         }
     }
+    //equivalent ) foreach($articleColorsList  as $index => $color) {....}
 }

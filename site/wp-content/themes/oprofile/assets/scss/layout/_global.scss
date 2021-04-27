@@ -78,11 +78,11 @@ main {
     text-align: justify;
 
     &>h2.section-title {
-      margin-top: 0;   
-      color: $color-white;
+        margin-top: 0;
+        color: $color-white;
     }
 
-    &__content>h3.section-title {  
+    &__content>h3.section-title {
         color: $color-white;
     }
 
@@ -90,21 +90,21 @@ main {
         color: $color-white;
     }
 
-    @include screen-medium {
-       &__content {
-        width: 70%;
-        margin: 0 auto 0 auto;
-        } 
+    & p {
+        width: 100%;
     }
-    
-    // background-image: url('../../images/epaule.jpg'); 
-    // background-repeat: no-repeat; 
-    // background-position: top; 
-    // background-size: cover;
 
-    // & .section-title,
-    // & .biography,
-    // & .carousel__item {
-    //     color: $color-white;  
-    // }
+    @include screen-medium {
+
+        &__content {
+            width: 90%;
+            margin: 0 auto 0 auto;
+        }
+
+        & .customer-quotes {
+            width: 90%;
+            margin: 0 auto 0 auto;
+        }
+    }
+
 }
