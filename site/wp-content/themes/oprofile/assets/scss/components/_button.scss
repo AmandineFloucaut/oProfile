@@ -3,27 +3,23 @@
     border: solid 2px $color-dark-blue;
     padding: $gutter-half;
     text-decoration: none;
-   
+
     &::after {
-        // <i class="fas fa-arrow-right"></i>
-        content: '\f061';   // code (unicode) du caractère
-        font-family: "Font Awesome 5 Free"; // dans quelle police nous affichons le caractère
+        content: '\f30b';
+        font-family: "Font Awesome 5 Free";
         font-weight: 600;
-        margin-left: $gutter-double;
+        margin: auto 0.5rem auto 2rem;
+        //padding-right: 0.5rem;
     }
 }
 
 .hero__buttons {
     @include screen-medium{
-      margin-top: 10rem;    
+      margin-top: 10rem;
 
       .button {
           margin-right: 2rem;
           font-size: 1.2rem;
       }
     }
-
-
-     
 }
- 

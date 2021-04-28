@@ -8,8 +8,6 @@
         <?php
             get_template_part('partials/components/nav');
             get_template_part('partials/components/topbar');
-
-
         ?>
     </header>
 
@@ -17,7 +15,9 @@
     <?php
         get_template_part('partials/components/banner');
         //get_template_part('partials/footer-display');
-        get_template_part('partials/single-article');
+        get_template_part('partials/singular-display/single-article');
+        get_template_part('partials/components/banner');
+        get_template_part('partials/singular-display/comments-article');
     ?>
 
 <?php

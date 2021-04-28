@@ -9,23 +9,22 @@
         radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.5) 58%),
         url('../images/header.jpg');
 
-
     height: 550px;
     background-size: cover;
 
 
     h2 {
         font-size: 3rem;
-        margin-bottom: $gutter-double;
+        margin-bottom: 2rem;
     }
 
     .hero__intro {
         font-size: 2rem;
-        margin-bottom: $gutter-double;
+        margin-bottom: 2rem;
     }
 
     .hero {
-        margin: $gutter-double;
+        margin:  2rem;
     }
 
 

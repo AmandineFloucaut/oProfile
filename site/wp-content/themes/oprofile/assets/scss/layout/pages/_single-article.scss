@@ -6,7 +6,7 @@
     }
 }
 
-.article {
+.single-article {
 
     &__image {
         height: 10%;
@@ -25,7 +25,25 @@
         text-decoration: none;
     }
 
+    &__section {
+        padding: 1rem;
+    }
+
     &__info {
-        margin-top: 2rem;
+        margin: 2rem 0 1rem 0;
+    }
+
+    &__categories {
+        margin-bottom: 2rem;
+    }
+
+    &__content {
+        p {
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+        :last-child {
+            margin-bottom: 3rem;
+        }
     }
 }
