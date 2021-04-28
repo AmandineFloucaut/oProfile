@@ -2,25 +2,27 @@
 
     <section>
 
+        <h2 class="section-title"> <?php the_title();?> </h2>
+
         <?php
             the_post();
 
             $imageThumbnail = get_the_post_thumbnail_url();
 
             if($imageThumbnail) {
-                echo '<img src="' . $imageThumbnail . '" class="article__thumbnail"/>';
+                echo '<div class="article__image">';
+                    echo '<img src="' . $imageThumbnail . '" class="article__thumbnail"/>';
+                echo '</div>';
             }
         ?>
 
     </section>
 
-    <h1> <?php the_title();?> </h1>
-
     <section class="article__info">
-
-            <div>Par <?= get_the_author();?></div>
-            <date>Le <?= get_the_date();?></date>
-
+        <p>
+        Par <a href="" class="author"><?= get_the_author();?></a>,
+        le <a href=""> <time class="date"><?= get_the_date('l F j, Y');?></time></a>
+        </p>
     </section>
 
     <section class="article__categogies">

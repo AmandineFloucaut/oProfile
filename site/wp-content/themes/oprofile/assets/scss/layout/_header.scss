@@ -1,11 +1,14 @@
 .header {
+
+    @include nav;
+    @include topBar;
+
     position: relative;
     color: $color-white;
     background:
         radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.5) 58%),
         url('../images/header.jpg');
 
-    ;
 
     height: 550px;
     background-size: cover;
@@ -25,18 +28,5 @@
         margin: $gutter-double;
     }
 
-    .top-bar {
-        box-sizing: border-box;
-        width: 100%;
-        margin-bottom: $gutter-double;
-        background-color: #000;
-        padding: $gutter-half;
-        display: flex;
-        justify-content: space-between;
-
-        a {
-            color: white;
-        }
-    }
 
 }

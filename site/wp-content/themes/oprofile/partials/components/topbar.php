@@ -1,5 +1,5 @@
         <div class="header__top-bar top-bar">
-            <h1 class="logo top-bar__logo">oProfile</h1>
+            <h1 class="logo top-bar__logo">oProfiles</h1>
             <div class="top-bar__actions">
                 <a href="javascript:void(0)" class="top-bar__action-myprofile"><i class="fas fa-id-card"></i></a>
                 <span>/</span>

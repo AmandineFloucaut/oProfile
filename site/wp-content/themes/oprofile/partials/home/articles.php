@@ -5,12 +5,7 @@
                     <?php
 
                         $wordpressArticles = get_articles_from_home();
-                        // echo '<div style="border: solid 2px #F00">';
-                        //     echo '<div style="; background-color:#CCC">@'.__FILE__.' : '.__LINE__.'</div>';
-                        //     echo '<pre style="background-color: rgba(255,255,255, 0.8);">';
-                        //     print_r($wordpressArticles);
-                        //     echo '</pre>';
-                        // echo '</div>';
+
                             foreach($wordpressArticles as $article){
 
                                 echo '<article class="excerpt" style="background-image: url(\'https://source.unsplash.com/1kEHpwZdmtc\')">';
